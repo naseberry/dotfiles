@@ -1,0 +1,28 @@
+[alias]
+  amend = commit --amend
+  cm = commit -m
+	del = branch -D
+	delr = branch -D -r
+	gpush = push origin HEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  pfl = push --force-with-lease
+	pro = pull --rebase origin
+  pru = pull --rebase upstream
+	prunero = remote prune origin
+
+[commit]
+	gpgsign = true
+
+[credential]
+	helper = cache --timeout=3600
+
+[fetch]
+	prune = true
+
+[gpg]
+	program = gpg2
+
+[user]
+	email = naseberry@users.noreply.github.com
+  name = Peter Hunt
+	# signingkey =
